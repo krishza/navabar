@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>How To Create Responsive Navigation Bar With Dropdown Menus</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+</head>
+<body>
+<!-- Start Header -->
+<header>
+    <div class="wrapper">
+        <!-- Brand Image -->
+        <a href="#" class="logo"><img src="/images/markuptag-white-logo.png" alt="">SmsBird.Solution</a>
+        <i class="toggle-btn fas fa-bars"></i>
+        <!-- Navbar -->
+        <nav class="nav-menus">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-align-left"></i> About</a></li>
+            <li class="sub-menus"><a href="#"><i class="fas fa-list-ul"></i> Services</a>
+                <ul>
+                    <li><a href="#"><i class="fab fa-blogger-b"></i> Blogging</a></li>
+                    <li><a href="#"><i class="fab fa-wordpress-simple"></i> WordPress</a></li>
+                    <li><a href="#"><i class="fab fa-html5"></i> HTML5</a></li>
+                    <li><a href="#"><i class="fab fa-css3-alt"></i> CSS</a></li>
+                    <li><a href="#"><i class="fab fa-angular"></i> Angular</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-users"></i> Team</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        </nav>
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Toggle jQuery for Small Devices -->
+<script type="text/javascript">
+    $(".toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".nav-menus").toggleClass("active");
+    });
+</script>
+</body>
+</html>
